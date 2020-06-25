@@ -15,6 +15,21 @@
 //
 // Console.log them to verify that all is working.
 
-class Book {}
+// Create Book Class
+class Book {
+    constructor(title, genre, author, isRead) {
+        this.title = title;
+        this.genre = genre;
+        this.author = author;
+        this.isRead = isRead || false;
+    };
+}
+
+// Declare book objects
+let book1 = new Book('1984', 'Classics', 'George Orwell', true);
+let book2 = new Book('The Lord of the Rings', 'Fantasy', 'J.R.R. Tolkien');
+let book3 = new Book('Dr. Jekyll and Mr. Hyde', 'Classics', 'Robert Louis Stevenson', true);
+let book4 = new Book('The Hobbit, or There and Back Again', 'Fantasy', 'J.R.R. Tolkien', false);
+let book5 = new Book('The Hunger Games', 'Young Adult', 'Suzanne Collins');
 
 console.log(book1, book2, book3, book4, book5);
